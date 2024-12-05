@@ -1,0 +1,6 @@
+Írjon egy szamit.js fájlt, melyet csatoljon a teglalap.html-hez.
+
+A .js fájlban dinamikusan rendeljen a ,,szamit'' gomb click eseményéhez egy névtelen függvényt, mely kiszámítja 
+a téglalap kerületét és megjeleníti a kerület azonosítójú elemben.
+
+A bármelyik oldal értéke hiányzik hibaüzenet jelenjen meg!
