@@ -1,0 +1,1 @@
+document.getElementById("name").addEventListener("input",(e)=>{document.getElementById("output").innerHTML=`Ezt írtad be: ${document.getElementById("name").value}`})

@@ -1,0 +1,1 @@
+document.getElementById("hoverBox").addEventListener("mouseover", ()=>{alert("ezer hála köszi")})

@@ -1,0 +1,1 @@
+document.getElementById("color").addEventListener("change",(e)=>{document.getElementById("colorOutput").innerHTML = `Kijelölt szín: ${document.getElementById("color").value}`;})
