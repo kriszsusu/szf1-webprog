@@ -1,44 +1,58 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regisztrációs űrlap</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Regisztrációs űrlap</title>
+<link
+href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
+rel="stylesheet"
+/>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form id="registrationForm" onsubmit="return validateForm(event)">
-        <div class="form-group">
-            <label for="name">Név *</label>
-            <input type="text" id="name" required>
-        </div>
+<h1>
+Regisztrációs űrlap
+</h1>
 
-        <div class="form-group">
-            <label for="gender">Neme *</label>
-            <select id="gender" required onchange="toggleExtraField()">
-                <option value="">Válassz...</option>
-                <option value="ferfi">Férfi</option>
-                <option value="no">Nő</option>
-            </select>
-        </div>
+<form id="regform" onsubmit="return validateForm(event)">
 
-        <div class="form-group">
-            <label for="birthdate">Születési dátum *</label>
-            <input type="date" id="birthdate" required>
-        </div>
+<div class="formgroup">
+<label for="name" class="req">Név</label>
+<input type="text" id="name">
+</div>
 
-        <div class="form-group">
-            <label for="email">Email *</label>
-            <input type="email" id="email" required>
-        </div>
+<div id="extracont"></div>
 
-        <div id="extraFieldContainer"></div>
+<div class="formgroup">
+<label for="gender" class="req">Neme</label>
+<select id="gender" onchange="toggleExtraField()">
+<option value="" disabled selected hidden>Válassz...</option>
+<option value="ferfi">Férfi</option>
+<option value="no">Nő</option>
+</select>
+</div>
 
-        <button type="submit">Regisztráció</button>
-    </form>
+<div class="formgroup">
+<label for="birthdate" class="req">Születési dátum</label>
+<input type="date" id="birthdate">
+</div>
 
-    <div id="message"></div>
+<div class="formgroup">
+<label for="email" class="req">Email</label>
+<input type="email" id="email">
+</div>
 
-    <script src="script.js"></script>
+<button type="submit">Regisztráció</button>
+
+<div id="message"></div>
+</form>
+
+<footer>
+<a href="https://www.magyartisza.hu/pdf/compliance/Adatkezelesi_tajekoztato.pdf" target="_blank">Adatkezelési tájékoztató</a>
+<a href="https://www.magyartisza.hu/pdf/compliance/Cookie_tajekoztato.pdf" target="_blank">Süti tájékoztató</a>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
