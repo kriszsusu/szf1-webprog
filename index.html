@@ -130,7 +130,7 @@
         twemoji.parse(document.body);
         
         async function fetchRepoFolders() {
-            const apiUrl = "https://api.github.com/repos/kriszsusu/szf1-ikt/contents";
+            const apiUrl = "https://api.github.com/repos/kriszsusu/szf1-webprog/contents";
             const response = await fetch(apiUrl);
             let data = await response.json();
             const folderList = document.getElementById('folderList');
