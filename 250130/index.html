@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisztrációs űrlap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="registrationForm" onsubmit="return validateForm(event)">
+        <div class="form-group">
+            <label for="name">Név *</label>
+            <input type="text" id="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="gender">Neme *</label>
+            <select id="gender" required onchange="toggleExtraField()">
+                <option value="">Válassz...</option>
+                <option value="ferfi">Férfi</option>
+                <option value="no">Nő</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="birthdate">Születési dátum *</label>
+            <input type="date" id="birthdate" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" required>
+        </div>
+
+        <div id="extraFieldContainer"></div>
+
+        <button type="submit">Regisztráció</button>
+    </form>
+
+    <div id="message"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
