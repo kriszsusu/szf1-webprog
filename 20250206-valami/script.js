@@ -34,7 +34,7 @@ kacsa.onsubmit = (e)=>{
     e.preventDefault();
     let nev = document.getElementById("name").value;
     let ev = document.getElementById("year").value;
-    document.querySelector("#kacsa>output").innerText = emailCimetGeneral(nev, ev);
+    document.querySelector("#kacsa>.output").innerText = emailCimetGeneral(nev, ev);
 }
 egyszam.onsubmit = (e) => {
     e.preventDefault();
