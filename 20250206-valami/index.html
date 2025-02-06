@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kacsa meg számok</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicons/android-chrome-512x512.png">
+</head>
+<body>
+    <div class="container">
+        <form id="kacsa">
+            <h1>Repülő Kacsa</h1>
+            <h2>E-mail generátor</h2>
+            <input type="text" id="name" name="name" placeholder="Teljes név" required>
+            <input type="number" id="year" name="year" max="9999" maxlength="4" placeholder="Születési év" required>
+            <button type="submit">Generálás</button>
+            <p class="output" id="output"></p>
+            <h3>ennek mi értelme amúgy?</h3>
+        </form>
+        <form id="egyszam">
+            <h1>Egyszámjáték</h1>
+            <h2>Adjon meg egy listányi számot</h2>
+            <input type="text" id="numbers" name="numbers" placeholder="66, 117, 122, 105, 32, 118, 97, 103, 121, ..." required>
+            <h3>(vesszővel elválasztva)</h3>
+            <button type="submit">Generálás</button>
+            <p class="output" id="output"></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
